@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="head">
+    <!-- 1.如果用户已经登录，则显示头像和昵称 -->
+    <view wx:if="{{userInfo.avatarUrl}}">
+      <image id="userinfo-avatar" src="{{userInfo.avatarUrl}}" />
+      <view>
+        <text>{{userInfo.nickName}}</text>
+      </view>
+
+    </view>
+    <!-- 2.如果用户没有登录，则显示默认头像和登录按钮 -->
+    <view wx:else>
+      <image id="userinfo-avatar" src="{{avatarUrl}}" />
+      <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" type="primary">登录</button>
+    </view>
+
+  </view>
+
+  <view class="grey"></view>
+  <view class="main" wx:if="{{isShow}}">
+    <view class="add" bind:tap="addInfo">
+      <image class="pic" src="/images/add-selected.png" />
+      <text>添加信息</text>
+    </view>
+    <view class="history" bind:tap="history">
+      <image class="pic" src="/images/detail-selected.png" />
+      <text>历史信息</text>
+    </view>
+  </view>
+
+</view>

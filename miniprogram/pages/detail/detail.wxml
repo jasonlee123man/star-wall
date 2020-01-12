@@ -1,0 +1,22 @@
+<view class="container">
+  <swiper class="imgs" indicator-dots="{{true}}" indicator-active-color="#fff">
+    <swiper-item wx:for="{{detail.fileids}}" wx:key="{{index}}">
+      <image class="img" src="{{item}}" mode="widthFix" bindtap="preview" id="{{index}}"></image>
+    </swiper-item>
+  	
+  </swiper>
+  <view class="user">
+  	<image src="{{detail.avatarUrl}}" class="avatar"/>
+    <view class="contain">
+      <view>
+         <text class="myname">{{detail.nickName}}</text>
+        <view class="time">{{detail.addtime}}</view>
+      </view>
+    </view>
+     <button type="primary" size="mini" class="btn" open-type="contact" plain="{{true}}">问一下</button>
+  </view>
+  <view class="info">
+    <rich-text nodes="{{detail.intro}}">
+    </rich-text>
+  </view>
+</view>

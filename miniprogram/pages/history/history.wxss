@@ -1,0 +1,19 @@
+.item {
+    box-sizing: border-box;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 1px solid #666;
+    margin: 0 20rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.img{
+  height:40rpx;
+  width:40rpx;
+  margin-right: 30rpx;
+}
+.del-hover{
+    background: #ccc;
+}

@@ -1,0 +1,1 @@
+<button bindtap="getLocation" type="primary">获取位置</button>

@@ -1,0 +1,8 @@
+<view class="container">
+    <view class="item" wx:for="{{list}}" wx:key="index">
+    <view class="text">{{item.intro}}</view>
+    <image class="img" hover-class="del-hover" src="/images/delete.png" bindtap="del" id="{{item._id}}" data-index='{{index}}'></image>
+    </view>
+      
+    
+</view>

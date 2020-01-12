@@ -1,0 +1,25 @@
+<form bindsubmit="submit">
+    <view class="contioner">
+        <view class="line">
+            <editor id="text" 
+            placeholder="想说点什么..." 
+            show-img-toolbar="{{true}}" 
+            show-img-size="{{true}}" 
+            bindinput="myEditorInput">
+        </editor>
+    </view>
+    <view class="line">
+        <block wx:for="{{images}}" wx:key="index">
+          <image mode="aspectFill" class="selectImg" src="{{item}}" bindtap="addPic" />
+      </block>
+      
+  </view>
+
+  <view class="line">
+    <picker mode="region"  bindchange="region"  name="region" value="{{region}}">
+        所在位置：{{region}}
+    </picker>
+</view>
+<button form-type="submit" type="primary">提交</button>
+</view>
+</form>

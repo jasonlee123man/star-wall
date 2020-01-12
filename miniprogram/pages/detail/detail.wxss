@@ -1,0 +1,48 @@
+.user{
+  display: flex;
+  align-items: center;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.imgs{
+  text-align: center;
+  height: 500rpx;
+}
+.img{
+  /*height:auto;*/
+  width: 730rpx;
+  height: 500rpx;
+
+}
+.info{
+  box-sizing: border-box;
+  padding:30rpx;
+  width: 100%;
+  font-size: 30rpx;
+  line-height: 45rpx;
+
+}
+.time{
+  font-size: 24rpx;
+  color:#999;
+}
+.avatar{
+  border-radius:50%;
+  overflow:hidden;
+  display:block;
+  height:80rpx;
+  width:80rpx;
+  /*margin:1vw 3vw*/
+}
+.contain{
+  margin-left: 20rpx;
+
+}
+.myname{
+  font-size: 30rpx;
+}
+.time{
+  margin-top: 10rpx;
+}

@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="item" wx:for="{{list}}" wx:key="index" bindtap='detail' id='{{item._id}}'>
+    <image class="img" mode="aspectFill" src="{{item.fileids[0]}}"></image>
+    <view class="jianjie">
+    	<rich-text nodes="{{item.intro}}"></rich-text>
+   </view>
+    <view class="user">
+    	<image src="{{item.avatarUrl}}" class="avatar"/>
+    	<text  class="nickname" >{{item.nickName}}</text>
+    </view>
+  </view>
+</view>
